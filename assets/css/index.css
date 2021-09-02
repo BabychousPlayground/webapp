@@ -1,0 +1,154 @@
+@font-face {
+    font-family: "comfortaa";
+    src: url("../font/Comfortaa-Regular.ttf");
+}
+
+@font-face {
+    font-family: "maia";
+    src: url("../font/Maia.ttf");
+}
+
+:root {
+    --nav: rgb(182, 0, 0);
+}
+
+body {
+    transition: 0.2s;
+    margin: 0 auto;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+    background: url("../img/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#header #fixed {
+    top: 0%;
+    z-index: 2;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    box-shadow: 0px 1px 10px black;
+    background-color: white;
+}
+
+#header #fixed button {
+    border: none;
+    background-color: inherit;
+    font-size: 175%;
+}
+
+#header #fixed img {
+    height: 35%;
+    transition: 0.2s;
+}
+
+#header #fixed #leave-menu {
+    display: none;
+    color: #292929;
+}
+
+#header #fixed #dropdown {
+    display: none;
+    flex-direction: column;
+    background-color: inherit;
+    position: absolute;
+    top: 10vh;
+    width: 100%;
+    height: 40vh;
+    z-index: 1;
+    box-shadow: 0px 2px -2px 20px black;
+}
+
+#header #fixed #dropdown a {
+    display: flex;
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    justify-content: center;
+    transition: 0.2s;
+    white-space: pre;
+}
+
+#header #fixed #dropdown a:hover {
+    background-color: var(--nav);
+    color: white;
+    transform: scale(1.25);
+}
+
+#header #fixed #dropdown .utils {
+    display: flex;
+    flex-direction: column;
+    background-color: inherit;
+    width: 100%;
+    height: 70%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#header #fixed #dropdown .bar {
+    display: flex;
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#header #fixed #dropdown .account {
+    display: flex;
+    flex-direction: column;
+    background-color: inherit;
+    width: 100%;
+    height: 30%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#header #fixed #disable-dark {
+    color: white;
+    display: none;
+}
+
+#header .welcome {
+    display: flex;
+    color: white;
+    text-shadow: 3px 3px black;
+    font-size: 6vh;
+    padding-top: 10vh;
+    height: 40vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.discover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--nav);
+    text-decoration: none;
+    text-transform: uppercase;
+    position: absolute;
+    background-color: white;
+    height: 45px;
+    width: 145px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 25px;
+    top: 50%;
+    left: 50%;
+    margin-top: -22.5px;
+    margin-left: -72.5px;
+}
